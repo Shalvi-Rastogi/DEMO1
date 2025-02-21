@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 4rem;
+}
+
+header {
+    padding-right: 20px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 5rem;
+}
+
+nav ul li a i  {
+    margin-right: 12px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #000; 
+    display: flex; 
+    align-items: center; 
+    font-size: 1.5rem;
+}
+
+.home-button {
+    color: #D1884F;
+}
+
+main {
+    margin-top: 80px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-text, .intro-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro-text {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.intro-image {
+    text-align: right; 
+}
+
+.intro-image img {
+   width: 70%;
+}
+
+.welcome-statement {
+    color: #3BBADB;
+    font-weight: 100;
+    margin-bottom: 3rem;
+    font-size: xx-large;
+}
+
+h2 {
+    color: #018DB0;
+    font-size: 4.25rem;
+}
+
+.designer {
+    color: #D1884F;
+}
+
+.see-more {
+    color: #008AAA;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 50px 20px 0 0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.hire-me {
+    background: #008AAA;
+    color: #fff;
+    box-shadow: 0 5px 1px rgba(59, 186, 219, 0.5);
+}
+
+.see-my-project {
+    background: #fff;
+    color: #008AAA;
+    border: #008AAA 1px solid;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#about, #projects {
+    padding: 50px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.about-content, .project-grid {
+    max-width: 800px;
+    margin: auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contact {
+    padding: 50px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background: #80b3e9;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    main {
+        margin-top: 40px;
+    }
+
+    nav ul li {
+        display: block;
+        
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        justify-content: end;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        
+    }
+
+    .intro-image {
+        order: -1;
+    }
+
+    .intro-text, .intro-image {
+        flex: none;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .intro-image img {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .welcome-statement {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}
