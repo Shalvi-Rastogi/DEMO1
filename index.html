@@ -1,0 +1,108 @@
+
+
+
+<html >
+<head>
+    <title>Shalvi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+       <nav>
+            <ul> 
+                <li><a href="#home" class="home-button"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About Me</a></li>
+                <li><a href="#projects"><i class="fa fa-user"></i>Projects</a></li>
+                <li><a href="#contact"><i class="fa fa-phone"></i> Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro" class="flex-container">
+            <div class="intro-text">
+                <h1 class="welcome-statement">Welcome to my Portfolio</h1>
+                <h2>Hi, I'm Shalvi, a BTECH Undergraduate <span class="designer">College Student</span></h2>
+                <p>"A motivated and skilled second-year B.Tech Computer Science Student with a interest 
+                    in programming, problem-solving.Passionate about technology,continuously learning new skills, and actively working to enhance technical expertise. 
+                     Enthusiastic about coding, web development, and exploring emerging technologies to build innovative solutions."</p>
+            </div>
+            <div class="intro-image">
+                <img src="C:\xampp\htdocs\webd\portfolio.jpg" alt="img">
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hello! I'm Shalvi , a passionate Btech Undergraduate with a keen eye for creativity and functionality. 
+                   Currently pursuing my Btech at the Banasthali Vidyapith Rajasthan. 
+                   I love logic building and critical thinking that offer an engaging experience.</p>
+                <p>My experience includes web development and prototyping. I enjoy collaborating on innovative projects 
+                   and turning ideas into visually appealing digital experiences.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1: Portfolio Website</h3>
+                    <p>A personal portfolio website to showcase my skills, projects, and contact information.</p>
+                    <a href="#" class="btn project-link">View Project</a>
+                    <div class="project-card">
+                        <h3>Project 2: Food Delivery Platform:Design and Development </h3>
+                        <p>An interactive website using HTML|CSS|JS|PHP which help the user to order the food and deliver it to given Location.</p>
+                        <a href="#" class="btn project-link">View Project</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <form action="#" method="POST" class="contact-form">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name properly" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email properly." required>
+        
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
+                    <label for="from">Location:</label>
+                    <input type="text" id="from" name="from" placeholder="Enter your loaction" required>
+
+                    <input type="submit" onclick="btn1()" class="btn"></button>
+                </form>
+                <script>
+                    function btn1(){
+                        let name1=document.getElementById("name").value;
+                        let email=document.getElementById("email").value;
+                        let message=document.getElementById("message").value;
+                        let from1=document.getElementById("from").value;
+                        if(name1 === "" || email === "" || message === "" || from1 === "")
+                        {
+                                alert("Please fill the given details properly.");
+                        }
+                        if(!email.includes("@"))
+                        {
+                            alert("Please enter email with @");
+                        }
+                        else{
+                            alert("Message sent succesfully");
+                        }
+                        if(!email.includes("@"))
+                        {
+                            alert("Please enter email with @");
+                        }
+                    }
+                </script>
+            </div>
+        </section>
+        
+                
+    </main>
+    
+</body>
+</html> 
